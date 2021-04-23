@@ -1,0 +1,30 @@
+img.pimage{
+    width: 200px;
+    /* height: 200; */
+}
+
+a.pa{
+    display: inline-block;
+    height: 160px;
+}
+
+.row.products .p{
+    margin-top: 20px;
+    margin-bottom: 20px; 
+}
+img.cpi{
+     width: 100px;
+}
+
+table.alignmiddle td{
+    vertical-align: middle !important;
+}
+/* .p{
+    border: 2px solid rebeccapurple;
+} */
+
+
+.noty_theme_mint{
+    border-radius: 50px !important;
+    padding-left: 8px !important;
+}
