@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>MY PAGE</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <div class="ajaxbg">
+            <div class="ajaxinner">
+                <!-- <h3>You are now being redirected to paypal...</h3> -->
+                <img src="/images/ajax-loader.gif" alt=""/>
+            </div>
+        </div>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">My Shopping-Cart</a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        
+                       
+                        <!-- <li><a href="/">Title</a></li>
+                        
+                        <li><a href="#">Title</a></li> -->
+                       
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <!-- <a  href="/cart/checkout">My Cart(<span id="cartCounter">
+                                <%= session.cart ? session.cart.totalQty : (0) %> -->
+
+                                <!-- by default we will not get session var at front end so we need to put a midddleware in index.js -->
+                           <!-- </span>)
+                                
+                                
+                            </a> -->
+
+                            <a href="/cart/checkout">
+                                <i class="fa fa-shopping-cart" area-hidden="true"></i>My cart(
+                                    <span id="cartCounter"> <%= session.cart ? session.cart.totalQty : (0) %></span>
+                                )
+
+                            </a>
+                        </li>
+                        
+                        <li><a href="/users/contact">Contact us </a></li>
+                       
+                        <li><a href="/users/register">Sign in</a></li>
+                        <li><a href="/users/login">Log in</a></li>
+                        
+                       
+                        <!-- <li><a href="/admin/pages">Admin Area</a></li> -->
+                        
+                        
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+
+        <div class="container">
+           
+    
+            <div class="row">
+                <div class="col-xs-12 col-md-3">
+                    <h3>Categories</h3>
+                    <ul class="list-group">
+                            <li class="list-group-item"><a href="/fruits/view">FRUITS</a></li>
+                        
+                            <li class="list-group-item"><a href="/vegetables/view">VEGETABLES</a></li>
+
+                            <li class="list-group-item"><a href="/dairyproducts/view">DAIRY PRODUCTS</a></li>
+
+                            <li class="list-group-item"><a href="/beverages/view">BEVERAGES</a></li>
+
+                            <li class="list-group-item"><a href="/snacks/view">SNACKS & SWEETS</a></li>
+
+                            <!-- <li class="list-group-item"><a href="/biscuits/view">BAKERY & BISCUITS</a></li> -->
+                            
+                            
+                      
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-1"></div>
+                <div class="col-xs-12 col-md-8">
+                    
+                
+
+
+                    
